@@ -183,7 +183,7 @@ clean:
 	rm -f spim spim.exe *.o TAGS test.out lex.yy.c parser_yacc.c parser_yacc.h y.output
 
 install: spim
-	test -d $(BIN_DIR) || mkdir $(BIN_DIR)
+	test -d $(BIN_DIR) || mkdir -p $(BIN_DIR)
 	install spim $(BIN_DIR)/spim
 	install -d $(EXCEPTION_DIR)
 	install -m 0444 $(CPU_DIR)/exceptions.s $(EXCEPTION_DIR)/exceptions.s
