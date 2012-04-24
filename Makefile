@@ -189,6 +189,8 @@ install: spim
 	install -m 0444 $(CPU_DIR)/exceptions.s $(EXCEPTION_DIR)/exceptions.s
 
 install-man:
+	test -d $(DOC_DIR) || mkdir -p $(DOC_DIR)
+	test -d $(MAN_DIR) || mkdir -p $(MAN_DIR)
 	install -m 0444 $(DOC_DIR)/spim.man $(MAN_DIR)
 
 splint: spim
