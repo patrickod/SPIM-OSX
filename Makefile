@@ -54,14 +54,14 @@
 #
 
 # Path for directory that contains the source of the CPU code:
-CPU_DIR = ../CPU
+CPU_DIR = CPU
 VPATH = src:$(CPU_DIR)
 
 # Path of directory that contains SPIM tests:
-TEST_DIR = ../Tests
+TEST_DIR = Tests
 
 # Path of directory that contains documentation:
-DOC_DIR = ../Documentation
+DOC_DIR = Documentation
 
 
 
